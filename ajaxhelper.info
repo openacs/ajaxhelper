@@ -17,6 +17,7 @@
 
         <provides url="ajaxhelper" version="0.87d"/>
 	<requires url="acs-kernel" version="5.9.0"/>
+        <requires url="acs-tcl" version="5.9.1d7"/>
 
         <callbacks>
         </callbacks>
