@@ -13,10 +13,10 @@ Curvey Corners (<a href="http://www.curvycorners.net/" target="_blank">http://ww
 Yahoo User Interface Library 2.3.0 (<a href="http://developer.yahoo.com/yui/" target="_blank">http://developer.yahoo.com/yui/</a>)<br>
 Dojo Toolkit 0.4 (<a href="http://dojotoolkit.com" target="_blank">http://dojotoolkit.com</a>)<br>
 ExtJs 1.1.1 (<a href="http://extjs.com" target="_blank">http://extjs.com</a>)</p>
-<p><strong>What's New :</strong></p>
+<p><strong>What&#39;s New :</strong></p>
 <p>0.87d</p>
 <ul>
-<li>Uses Lee Denison's template::head code to load javascript
+<li>Uses Lee Denison&#39;s template::head code to load javascript
 sources and cascading style sheets</li><li>Removed Dojo javascript sources, users who would like to use
 dojo should download it separately from http://dojotoolkit.org</li><li>Added ExtJs javascript sources</li><li>Added helpers for YUI menu, autocomplete and treeview.</li><li>Added ExtJs helpers for Ext.onReady, Ext.Ajax and
 Ext.MessageBox</li><li>Additional tests in ajaxhelper/www/tests</li>
@@ -32,9 +32,9 @@ libraries.<br><br><span style="font-weight: bold;">Prerequisites :<br><br>
 </span> The ajax helper package must be installed and mounted
 in /ajax . The installer should automatically mount the ajax helper
 in /ajax/ upon installation of the package.</p>
-<p>Lee Denison's template::head code must be available. This code
-will soon be committed to CVS head after consulting the community
-and some more testing.</p>
+<p>Lee Denison&#39;s template::head code must be available. This
+code will soon be committed to CVS head after consulting the
+community and some more testing.</p>
 <p>In the mean time, you can find the files you need to implement
 template head from packages/ajaxhlper/www/docs. You should copy the
 files into the following locations</p>
@@ -62,7 +62,7 @@ files into the following locations</p>
 </p>
 
 As of 0.87d, all required sources and stylesheets are loaded
-automatically using Lee Denison's template::head code.<br>
+automatically using Lee Denison&#39;s template::head code.<br>
 <br>
 <span style="font-weight: bold;">Ajax Procedures :<br><br>
 Prototype</span>
@@ -98,7 +98,7 @@ contents of a div or layer with the response text of the xmlhttp
 request.<br>
 <br>
 
-Here's an example :<br>
+Here&#39;s an example :<br>
 <pre style="border: 1px dashed rgb(153, 153, 153); padding: 5px; overflow: auto; font-family: Andale Mono,Lucida Console,Monaco,fixed,monospace; color: rgb(0, 0, 0); background-color: rgb(238, 238, 238); font-size: 12px; line-height: 14px; width: 100%;"><code>
 set js_update_connections [ah::ajaxupdate -container "connections" \
                                 -url "/url/to/call \
@@ -114,22 +114,22 @@ On the adp side, you can just put<br>
 </code></pre>
 <br>
 
-The "-enclose" parameter tells the procedure to enclose the
-resulting script in script tags &lt;script&gt;&lt;/script&gt;. This
-is another option in addition to putting the scripts in html event
-attributes like onClick, onMouseover or onChange.<br>
+The "-enclose" parameter tells the procedure to enclose
+the resulting script in script tags &lt;script&gt;&lt;/script&gt;.
+This is another option in addition to putting the scripts in html
+event attributes like onClick, onMouseover or onChange.<br>
 <br>
 
-The "-pars" parameter is where you pass the querystring that you
-want to send along with the xmlhttp request. Notice that it takes
-the form of a querystring that you normally see in the address bar
-of your browser. Use this to pass values to the URL you are making
-an xmlhttp request to.<br>
+The "-pars" parameter is where you pass the querystring
+that you want to send along with the xmlhttp request. Notice that
+it takes the form of a querystring that you normally see in the
+address bar of your browser. Use this to pass values to the URL you
+are making an xmlhttp request to.<br>
 <br>
 
-The "-effect" parameter is an optional parameter that allows you to
-specify the effect you want to execute after the container's
-content has been updated.<br>
+The "-effect" parameter is an optional parameter that
+allows you to specify the effect you want to execute after the
+container&#39;s content has been updated.<br>
 <br>
 <span style="font-weight: bold;">Cinematic Effects :<br><br>
 </span>
@@ -182,5 +182,5 @@ append scripts [ah::sortable -element "container" -options "tag:'div',only:'port
 </code></pre>
 
 You adp page should contain a div with id attribute container. This
-"container" should have subcontainers which the above script will
-make sortable.
+"container" should have subcontainers which the above
+script will make sortable.
