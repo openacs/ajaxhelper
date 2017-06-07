@@ -68,9 +68,9 @@ automatically using Lee Denison&#39;s template::head code.<br>
 Prototype</span>
  has a pair of javascript functions that alllow
 programmers to use XMLHTTP. The ajax.updater and ajax.request
-functions. See <a href="http://wiki.script.aculo.us/scriptaculous/show/Ajax.Updater">http://wiki.script.aculo.us/scriptaculous/show/Ajax.Updater</a>
+functions. See <a href="http://api.prototypejs.org/ajax/Ajax/Updater/">http://api.prototypejs.org/ajax/Ajax/Updater/</a>
 
-and <a href="http://wiki.script.aculo.us/scriptaculous/show/Ajax.Request">http://wiki.script.aculo.us/scriptaculous/show/Ajax.Request</a>
+and <a href="http://api.prototypejs.org/ajax/Ajax/Request/">http://api.prototypejs.org/ajax/Ajax/Request/</a>
 
 for more information about these javascript functions.<br>
 <br>
@@ -135,7 +135,7 @@ container&#39;s content has been updated.<br>
 </span>
 Use ah::effects to generate javascript that allows you
 to implement transitional and cinematic effects to html elements.
-You will need to consult the scriptaculous documentation <a href="http://wiki.script.aculo.us/scriptaculous/tags/effects" target="_blank">http://wiki.script.aculo.us/scriptaculous/tags/effects</a>
+You will need to consult the scriptaculous documentation <a href="http://madrobby.github.io/scriptaculous/core-effects/" target="_blank">http://madrobby.github.io/scriptaculous/core-effects/</a>
 
 to know what kinds of effects and what kinds of options you can
 pass to the effect script.<br>
@@ -168,7 +168,7 @@ The adp file should have something like this ....<br>
 <span style="font-weight: bold;">Drag and Drop Sortables :<br><br>
 </span>
  Sortables are documented in the scriptaculous wiki
-<a href="http://wiki.script.aculo.us/scriptaculous/show/Sortables">http://wiki.script.aculo.us/scriptaculous/show/Sortables.</a>
+<a href="http://madrobby.github.io/scriptaculous/sortable/">http://madrobby.github.io/scriptaculous/sortable/</a>.
 <br>
 
 
