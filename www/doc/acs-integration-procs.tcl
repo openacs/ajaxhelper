@@ -93,7 +93,7 @@ ad_proc -public get_server_root {} {
 
 
 ad_proc adp_parse_ad_conn_file {} {
-    handle a request for an adp and/or tcl file in the template system.
+    handle a request for an adp and/or Tcl file in the template system.
 } {
     namespace eval template variable parse_level ""
     #ns_log debug "adp_parse_ad_conn_file => file '[file rootname [ad_conn file]]'"
