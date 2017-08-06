@@ -6,7 +6,7 @@
 <p>Hamilton G. Chua (ham\@solutiongrove.com)<br>
 September 2007<br>
 v0.87d<br><br><span style="font-weight: bold;">Components :</span><br>
-Prototype v1.5.1 (<a href="http://prototypejs.org/" target="_blank">http://prototypejs.org//</a>)<br>
+Prototype v1.5.1 (<a href="http://prototypejs.org/" target="_blank">http://prototypejs.org/</a>)<br>
 Scriptaculous v1.7.3 Beta (<a href="http://script.aculo.us/" target="_blank">http://script.aculo.us/</a>)<br>
 Overlibmws (<a href="http://www.macridesweb.com/oltest/" target="_blank">http://www.macridesweb.com/oltest/</a>)<br>
 Curvey Corners (<a href="http://www.curvycorners.net/" target="_blank">http://www.curvycorners.net/</a>)<br>
@@ -168,8 +168,8 @@ The adp file should have something like this ....<br>
 <span style="font-weight: bold;">Drag and Drop Sortables :<br><br>
 </span>
  Sortables are documented in the scriptaculous wiki
-<a href="http://madrobby.github.io/scriptaculous/sortable/">http://madrobby.github.io/scriptaculous/sortable/</a>.
-<br>
+<a href="http://madrobby.github.io/scriptaculous/sortable/">http://madrobby.github.io/scriptaculous/sortable/</a>
+.<br>
 
 
 For sortables to work you will need to define a container which
