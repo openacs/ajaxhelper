@@ -60,7 +60,7 @@ ad_proc -public template::head::add_script {
     multiple times.  You <strong>must</strong> supply either src or script.
 
     @param type    the type attribute of the script tag, eg. 'text/javascript'
-    @param defer   whether execution of the script should be defered until after
+    @param defer   whether execution of the script should be deferred until after
                    the page has been loaded
     @param src     the src attribute of the script tag, ie. the source url of the
                    script
@@ -171,7 +171,7 @@ ad_proc -public template::head::add_javascript {
     to be returned to the users client.  This function is a wrapper around 
     template::head::add_script.  You must supply either src or script.
 
-    @param defer   whether execution of the script should be defered until after
+    @param defer   whether execution of the script should be deferred until after
                    the page has been loaded
     @param src     the src attribute of the script tag, ie. the source url of the
                    script
@@ -288,7 +288,7 @@ ad_proc -public template::add_body_script {
     to the users client. You <strong>must</strong> supply either src or script.
 
     @param type    the type attribute of the script tag, eg. 'text/javascript'
-    @param defer   whether execution of the script should be defered until after
+    @param defer   whether execution of the script should be deferred until after
                    the page has been loaded
     @param src     the src attribute of the script tag, ie. the source url of the
                    script

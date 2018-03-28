@@ -683,7 +683,7 @@ ad_proc -public ah::effects {
 	{-element_is_var:boolean}
 } {
 	Generates javascript for effects by scriptaculous.
-	Refer to the scriptaculous documentaiton for a list of effects.
+	Refer to the scriptaculous documentation for a list of effects.
 	This proc by default will use the "Appear" effect
 	The parameters are passed directly to the scriptaculous effects script.
 	Parameters and options are case sensitive, refer to scriptaculous documentation.

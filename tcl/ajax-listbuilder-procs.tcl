@@ -165,7 +165,7 @@ ad_proc ah::lb::add_add_column_menu {
     {-add_url_var "add_column"}
     {-return_url ""}
 } {
-    Create a dropdown menu to add a column to be dislayed
+    Create a dropdown menu to add a column to be displayed
 
     @param list_name template::list list name
     @param allowed_elements List of element names that may appear in add
