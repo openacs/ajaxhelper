@@ -373,7 +373,7 @@ ad_proc -public ah::starteventwatch {
 
 	@param element the element you want to observe
 	@param event the event that the observer will wait for
-	@param obs_function the funcion that will be executed when the event is detected
+	@param obs_function the function that will be executed when the event is detected
 
 } {
 	ah::requires -sources "prototype"
@@ -399,7 +399,7 @@ ad_proc -public ah::stopeventwatch {
 
 	@param element the element you want to observe
 	@param event the event that the observer will wait for
-	@param obs_function the funcion that will be executed when the event is detected
+	@param obs_function the function that will be executed when the event is detected
 
 } {
     ah::requires -sources "prototype"
