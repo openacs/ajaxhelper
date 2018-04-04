@@ -559,7 +559,7 @@ ad_proc -public ah::popup {
 	{-options ""}
 } {
 	This proc will generate javascript for an overlibmws popup.
-	This script has to go into a javscript event like onClick or onMouseover.
+	This script has to go into a javascript event like onClick or onMouseover.
 	The ah::source must be executed with -source "overlibmws"
 	For more information about the options that you can pass
 	http://www.macridesweb.com/oltest/
@@ -593,7 +593,7 @@ ad_proc -public ah::clearpopup {
 
 } {
 	This proc will generate javascript for to clear a popup.
-	This script has to go into a javscript event like onClick or onMouseover.
+	This script has to go into a javascript event like onClick or onMouseover.
 	The ah::source must be executed with -source "overlibmws"
 
 	@author Hamilton Chua (ham@solutiongrove.com)
@@ -761,7 +761,7 @@ ad_proc -public ah::draggable {
 	@param element the page element that you want to make draggable
 	@param options specify the scriptaculous options
 	@param uid provide a unique id that is used as a variable to associate with the draggable
-	@param element_is_var specify this parameter if the element you are passing is a javscript variable
+	@param element_is_var specify this parameter if the element you are passing is a javascript variable
 
 	@return
 
@@ -793,7 +793,7 @@ ad_proc -public ah::droppable {
 	@creation-date 2006-02-24
 
 	@param element the page element that you want to be a droppable
-	@param element_is_var specify this parameter if the element you are passing is a javscript variable
+	@param element_is_var specify this parameter if the element you are passing is a javascript variable
 	@param uid provide a unique id that is used as a variable to associate with the droppable
 	@param options specify the scriptaculous options for droppables
 
@@ -826,7 +826,7 @@ ad_proc -public ah::droppableremove {
 	@creation-date 2006-02-24
 
 	@param element the page element that you want to be a droppable
-	@param element_is_var specify this parameter if the element you are passing is a javscript variable
+	@param element_is_var specify this parameter if the element you are passing is a javascript variable
 
 	@return
 	@error
@@ -858,7 +858,7 @@ ad_proc -public ah::sortable {
 
 	@param element the page element that you want to apply the effect to
 	@param options specify the scriptaculous options
-	@param element_is_var specify this parameter if the element you are passing is a javscript variable
+	@param element_is_var specify this parameter if the element you are passing is a javascript variable
 
 	@return
 	@error
