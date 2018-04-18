@@ -273,7 +273,7 @@ ad_proc -public template::add_body_handler {
     if {$identifier eq "anonymous"} {
         lappend body_handlers($event,anonymous) $script
     } else {
-        set body_handers($event,$identifier) $script
+        set body_handlers($event,$identifier) $script
     }
 }
 
