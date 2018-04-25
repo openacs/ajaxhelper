@@ -240,16 +240,16 @@ ad_proc -public ah::util_list_to_json {
     Converts a properly structured list of lists into JSON format.
         The list of lists may look something like
 
-            set data [list]
+            set data {}
             lappend data [list [list "x" "1"] [list "y" "10"] ]
             lappend data [list [list "x" "5"] [list "y" "20"] ]
 
         each line represents a row composed of lists.
         Each list in the row holds a pair that will be joined by ":".
 } {
-    set rows [list]
+    set rows {}
     foreach row $lists_of_pairs {
-        set pairs [list]
+        set pairs {}
         foreach pair $row {
             lappend pairs [join $pair ":"]
         }

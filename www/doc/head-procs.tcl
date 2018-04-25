@@ -20,28 +20,28 @@ ad_proc -private template::reset_request_vars {} {
 } {
     variable ::template::head::scripts
     array unset scripts
-    array set scripts [list]
+    array set scripts {}
 
     variable ::template::head::links
     array unset links
-    array set links [list]
+    array set links {}
 
     variable ::template::head::metas
     array unset metas
-    array set metas [list]
+    array set metas {}
 
     variable ::template::body_handlers
     array unset body_handlers
-    array set body_handlers [list]
+    array set body_handlers {}
 
     variable ::template::body_scripts
     array unset body_scripts
-    set body_scripts [list]
+    set body_scripts {}
 
     variable ::template::headers
-    set headers [list]
+    set headers {}
     variable ::template::footers
-    set footers [list]
+    set footers {}
 }
 
 ad_proc -public template::head::add_script {

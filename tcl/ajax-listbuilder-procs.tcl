@@ -33,13 +33,13 @@ ad_proc ah::lb::add_column_menu {
     if {[info exists _hide_column]} {
         set hide_column $_hide_column
     } else {
-        set hide_column [list]
+        set hide_column {}
     }
     upvar move _move 
     if {[info exists _move]} {
         set move $_move
     } else {
-        set move [list]
+        set move {}
     }
     upvar groupby _groupby
     set previous_index 0
@@ -49,7 +49,7 @@ ad_proc ah::lb::add_column_menu {
     template::list::get_reference -name $list_name
     upvar #[template::adp_level] ${list_name}:filter:groupby:properties groupby_ref
 
-    set groupbys [list]
+    set groupbys {}
     foreach elm $groupby_ref(values) {
 	set value [lindex $elm 1]
         lappend groupbys [lindex $value 0 1]
@@ -73,16 +73,16 @@ ad_proc ah::lb::add_column_menu {
                 set first_not_checkbox 1
             }
             
-            set sortmenuitems [list]
+            set sortmenuitems {}
             lappend sortmenuitems [list [list "text" "A-Z"] [list "url" "[filter_url -list_name $list_name -filter_name orderby -filter_value ${element},asc -return_url $return_url]"]]
             lappend sortmenuitems [list [list "text" "Z-A"] [list "url" "[filter_url -list_name $list_name -filter_name orderby  -filter_value ${element},desc -return_url $return_url]"]]
 	    
-            set groupmenuitems [list]	    
+            set groupmenuitems {}	    
 
             lappend groupmenuitems [list [list "text" "By Exact Value"] [list "url" "[filter_url -list_name $list_name -filter_name groupby -filter_value $element -return_url $return_url]"] ]
 #            lappend groupmenuitems [list [list "text" "By First Letter"] [list "url" "javascript:void(0)"] ]
 	   
-	    set movemenuitems [list]
+	    set movemenuitems {}
             set this_move $move
             if {[set this_move_index [lsearch $move $element]] > -1} {
                 set this_move [lreplace $move $this_move_index [expr {$this_move_index + 1}]]
@@ -97,7 +97,7 @@ ad_proc ah::lb::add_column_menu {
                 lappend movemenuitems [list [list "text" "First"] [list "url" "[filter_url -list_name $list_name -filter_name move -filter_value [concat $this_move [list $element $first_not_checkbox]] -return_url $return_url]"]]
             }
 
-            set menulist [list]
+            set menulist {}
             if {[lsearch $list_properties(orderby_refs) "*${element_properties(name)}*"] > -1} {
                lappend menulist [list [list "text" "Sort"] [list "submenu" [list [list "id" "sort-$element_properties(name)"] [list "itemdata" $sortmenuitems] ] ] ]
             }
@@ -180,9 +180,9 @@ ad_proc ah::lb::add_add_column_menu {
     if {[info exists _add_column]} {
         set add_column $_add_column
     } else {
-        set add_column [list]
+        set add_column {}
     }
-    set addcolumnlist [list]
+    set addcolumnlist {}
     template::list::get_reference -name $list_name
     
     lappend list_properties(actions) [_ acs-templating.Add_Column] "javascript:void(0)" [_ acs-templating.Add_Column]
@@ -252,7 +252,7 @@ ad_proc ah::lb::add_view_menu {
     foreach view $view_names {
         set view_name [lindex $view 0]
         set value [lindex $view 1]
-        set viewmenuitems [list]
+        set viewmenuitems {}
         lappend viewlist [list [list "text" $view_name] [list "url" "[filter_url -list_name $list_name -filter_name __list_view -filter_value $value -return_url [ad_conn url]]" ]]
 
     }
@@ -455,7 +455,7 @@ ad_proc ah::lb::prepare_list {
 	}
 
 	if {[info exists hide]} {
-	    set reset_filters [list]
+	    set reset_filters {}
 	    if {[info exists orderby] && [lsearch $hide [lindex [split $orderby ,] 0]] > -1} {
 		unset orderby
 		lappend reset_filters orderby
