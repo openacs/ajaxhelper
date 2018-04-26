@@ -1,6 +1,6 @@
 
 # create the list that holds our data
-set data [list]
+set data {}
 lappend data [list [list "x" "1"] [list "y" "10"] ]
 lappend data [list [list "x" "5"] [list "y" "20"] ]
 

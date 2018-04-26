@@ -1,5 +1,5 @@
 # create the nodes for our tree
-set nodes [list]
+set nodes {}
 
 # 1st level
 lappend nodes [list "fld1" "Folder 1" "tree" "" "" "" ""]
