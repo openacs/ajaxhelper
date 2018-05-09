@@ -367,7 +367,7 @@ ad_proc -public ah::yui::create_tree {
 
     This is an example of a node list.
 
-            set nodes {}
+            set nodes [list]
             lappend nodes [list "fld1" "Folder 1" "tree" "" "" "" ""]
             lappend nodes [list "fld2" "Folder 2" "tree" "javascript:alert('this is a tree node')" "" "" ""]
 
@@ -531,7 +531,7 @@ ad_proc -public ah::yui::menu_list_to_json {
     Converts a properly structured list of menu items into JSON format.
         The list of lists may look something like
 
-            set submenu {}
+            set submenu [list]
             lappend submenu [list [list "text" "Submenu1"] [list "url" "http://www.google.com"] ]
             lappend submenu [list [list "text" "Submenu2"] [list "url" "http://www.yahoo.com"] ]
 
@@ -539,9 +539,9 @@ ad_proc -public ah::yui::menu_list_to_json {
         Each list in the row holds a pair that will be joined by ":".
 } {
 
-    set rows {}
+    set rows [list]
     foreach row $lists_of_pairs {
-        set pairs {}
+        set pairs [list]
         foreach pair $row {
             if { [lindex $pair 0] eq "submenu" } {
                 set submenulist [lindex $pair 1]
@@ -695,9 +695,9 @@ ad_proc -public ah::yui::autocomplete {
         if { [llength [lindex $suggestlist 0]] > 1} {
 
             # yes , let's create the array for the innerlist and put each array into one big array
-            set outerlist {}
+            set outerlist [list]
             foreach onelist $suggestlist {
-                set escaped_list {}
+                set escaped_list [list]
                 foreach elm $onelist {
                     lappend escaped_list [string map {' \\'} $elm]
                 }
@@ -705,7 +705,7 @@ ad_proc -public ah::yui::autocomplete {
                 lappend outerlist "\[ '[join $escaped_list "','"]' \]"
             }
             set script "var ${varname}Arr = \[ [join $outerlist ","] \];"
-            set markup {}
+            set markup [list]
             for { set x 0} { $x < [llength [lindex $suggestlist 0]] } { incr x} {
                 lappend markup "oResultItem\[${x}\]"
             }
