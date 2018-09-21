@@ -386,7 +386,7 @@ ad_proc -public ah::yui::create_tree {
 	@author Hamilton Chua (ham@solutiongrove.com)
 	@creation-date 2006-11-05
 
-	@param element This is the id of the html elment where you want to generate the tree view control.
+	@param element This is the id of the html element where you want to generate the tree view control.
 	@param nodes Is list of lists. Each list contains the node information to be passed to ah::yui::create_tree_node to create a node.
 	@param varname The javascript variable name to give the tree.
 

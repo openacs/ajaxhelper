@@ -1,6 +1,6 @@
 ad_library {
 
-	Ajax Exprimental Procs
+	Ajax Experimental Procs
 
 	@author Hamilton Chua (ham@solutiongrove.com)
 	@creation-date 2006-11-1
