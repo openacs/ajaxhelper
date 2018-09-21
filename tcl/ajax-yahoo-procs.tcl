@@ -139,13 +139,10 @@ ad_proc -private ah::yui::requires {
 }
 
 
-ad_proc -public ah::yui::js_sources {
+ad_proc -deprecated -public ah::yui::js_sources {
     {-source "default"}
     {-min:boolean}
 } {
-
-    DEPRECATED. Use ah::yui::requires instead.
-
     Generates the <script> syntax needed on the head
     for Yahoo's User Interface Library
     The code :
@@ -156,6 +153,8 @@ ad_proc -public ah::yui::js_sources {
 
     @author Hamilton Chua (ham@solutiongrove.com)
     @creation-date 2006-01-16
+
+    @see ah::yui::requires
 
     @param default Loads the prototype and scriptaculous javascript libraries.
     @param source The caller can specify which set of javascript source files to load. You can specify more than one by separating the list with commas.

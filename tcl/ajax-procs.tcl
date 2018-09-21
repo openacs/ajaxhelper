@@ -121,11 +121,9 @@ ad_proc -private ah::requires {
     }
 }
 
-ad_proc -public ah::js_sources {
+ad_proc -deprecated -public ah::js_sources {
 	{-source "default"}
 } {
-    DEPRECATED. Use ah::requires instead.
-
 	Will load any of the following javascript sources
 		prototype,
 		scriptaculous,
@@ -139,6 +137,8 @@ ad_proc -public ah::js_sources {
 
 	@author Hamilton Chua (ham@solutiongrove.com)
 	@creation-date 2006-01-16
+
+    @see ah::requires instead
 
 	@param source The caller can specify which set of javascript source files to load. This can be a comma seprated list
 		Valid values include
