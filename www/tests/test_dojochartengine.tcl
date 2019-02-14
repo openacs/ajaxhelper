@@ -1,6 +1,6 @@
 
 # create the list that holds our data
-set data {}
+set data [list]
 lappend data [list [list "x" "1"] [list "y" "10"] ]
 lappend data [list [list "x" "5"] [list "y" "20"] ]
 
@@ -25,7 +25,7 @@ Object $objname
         return $type
     }
     $objname proc bindings_from_list {lists_of_pairs} {
-        set pairs {}
+        set pairs [list]
         foreach pair $lists_of_pairs {
             lappend pairs [join $pair ":"]
         }
@@ -58,7 +58,7 @@ Object $objname
         return $varname
     }
     $objname proc range_from_list {rangelist} {
-        set pairs {}
+        set pairs [list]
         foreach pair $rangelist {
             lappend pairs [join $pair ":"]
         }
@@ -100,7 +100,7 @@ Object $objname
         return $varname
     }
     $objname proc range_from_list {rangelist} {
-        set pairs {}
+        set pairs [list]
         foreach pair $rangelist {
             lappend pairs [join $pair ":"]
         }
@@ -135,7 +135,7 @@ Object $objname
     $objname set axis_obj_list [list "axis1" "axis2"]
     $objname proc createscript { } {
         my instvar varname series_obj_list axis_obj_list
-        set axislist {}
+        set axislist [list]
         foreach axis $axis_obj_list {
             lappend axislist [$axis getvarname]
         }

@@ -191,7 +191,7 @@ ad_proc -public ah::dojo::args {
 	@creation-date 2006-11-05
 
 } {
-	set objargs {}
+	set objargs [list]
 	foreach args $argslist {
 		lappend objargs [join $args ":"]
 	}

@@ -2,7 +2,7 @@
 
 # Menu 1
 
-# set menulist1 {}
+# set menulist1 [list]
 # lappend menulist1 [list [list "text" "Google"] [list "url" "http://www.google.com"] ]
 # lappend menulist1 [list [list "text" "Yahoo"] [list "url" "http://www.yahoo.com"] ]
 
@@ -19,11 +19,11 @@ ah::yui::menu_from_list -varname "oMenu1" \
 
 # Menu 2
 
-# set submenuitems {}
+# set submenuitems [list]
 # lappend submenuitems [list [list "text" "Home Page"] [list "url" "http://www.solutiongrove.com"] ]
 # lappend submenuitems [list [list "text" "Blog"] [list "url" "http://www.solutiongrove.com/blogger/"] ]
 # set submenulist1 [list [list "id" "sgrovelinks"] [list "itemdata" $submenuitems] ]
-# set menulist2 {}
+# set menulist2 [list]
 # lappend menulist2 [list [list "text" "OpenACS"] [list "url" "http://www.openacs.org"] ]
 # lappend menulist2 [list [list "text" "Solution Grove"] [list "submenu" $submenulist1] ]
 
