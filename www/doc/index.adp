@@ -86,7 +86,7 @@ that is best placed in an  event like "onClick".<br>
 &lt;a href="#" onClick="\@request;noquote\@"&gt;Send Request&lt;/a&gt;
 </code></pre>
 
-Consult the api-doc for more information about other parameters you
+Consult the API-doc for more information about other parameters you
 can pass on to the ah::ajaxrequest proc.<br>
 <br>
 
