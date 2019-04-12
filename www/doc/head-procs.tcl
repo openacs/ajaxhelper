@@ -1,7 +1,7 @@
 ad_library {
 
-    The template::head::* api manipulates the head section of the document that
-    will be returned to the users client.  Packages should use this api to add
+    The template::head::* API manipulates the head section of the document that
+    will be returned to the users client.  Packages should use this API to add
     package specific javascripts, CSS, link tags and meta tags to the HTML
     document.
 
@@ -59,12 +59,12 @@ ad_proc -public template::head::add_script {
     caller must ensure that anonymous script blocks are not inadvertently added 
     multiple times.  You <strong>must</strong> supply either src or script.
 
-    @param type    the type attribute of the script tag, eg. 'text/javascript'
+    @param type    the type attribute of the script tag, e.g. 'text/javascript'
     @param defer   whether execution of the script should be deferred until after
                    the page has been loaded
-    @param src     the src attribute of the script tag, ie. the source url of the
+    @param src     the src attribute of the script tag, i.e. the source url of the
                    script
-    @param charset the charset attribute of the script tag, ie. the character 
+    @param charset the charset attribute of the script tag, i.e. the character 
                    set of the script if it differs from the main document
     @param script  the inline script for the body of the script tag.  This 
                    parameter will be ignored if a value has been supplied for
@@ -103,13 +103,13 @@ ad_proc -public template::head::add_link {
     entry.  
 
     @param rel     the rel attribute of the link tag defining the relationship
-                   of the linked document to the current one, eg. 'stylesheet'
-    @param href    the href attribute of the link tag, eg. the target document
+                   of the linked document to the current one, e.g. 'stylesheet'
+    @param href    the href attribute of the link tag, e.g. the target document
                    of the link
-    @param type    the type attribute of the link tag, eg. 'text/css'
+    @param type    the type attribute of the link tag, e.g. 'text/css'
     @param media   the media attribute of the link tag describing which display
                    media this link is relevant to.  This may be a comma 
-                   separated list of values, eg. 'screen,print,braille'
+                   separated list of values, e.g. 'screen,print,braille'
     @param title   the title attribute of the link tag describing the target of
                    this link 
     @param lang    the lang attribute of the link tag specifying the language 
@@ -132,14 +132,14 @@ ad_proc -public template::head::add_meta {
     once; subsequent calls to add_meta will replace the existing entry.  You 
     <strong>must</strong> supply either name or http_equiv.
 
-    @param http_equiv the http-equiv attribute of the meta tag, ie. the 
+    @param http_equiv the http-equiv attribute of the meta tag, i.e. the 
                       HTTP header which this metadata is equivalent to
-                      eg. 'content-type'
-    @param name       the name attribute of the meta tag, ie. the metadata 
+                      e.g. 'content-type'
+    @param name       the name attribute of the meta tag, i.e. the metadata 
                       identifier
     @param scheme     the scheme attribute of the meta tag defining which 
                       metadata scheme should be used to interpret the metadata, 
-                      eg. 'DC' for Dublin Core (http://dublincore.org/)
+                      e.g. 'DC' for Dublin Core (http://dublincore.org/)
     @param content    the content attribute of the meta tag, ie the metadata
                       value
     @param lang       the lang attribute of the meta tag specifying the language 
@@ -173,9 +173,9 @@ ad_proc -public template::head::add_javascript {
 
     @param defer   whether execution of the script should be deferred until after
                    the page has been loaded
-    @param src     the src attribute of the script tag, ie. the source url of the
+    @param src     the src attribute of the script tag, i.e. the source url of the
                    script
-    @param charset the charset attribute of the script tag, ie. the character 
+    @param charset the charset attribute of the script tag, i.e. the character 
                    set of the script if it differs from the main document
     @param script  the inline script for the body of the script tag.  This 
                    parameter will be ignored if a value has been supplied for
@@ -204,14 +204,14 @@ ad_proc -public template::head::add_css {
     subsequent calls to add_css will replace the existing entry.  This function 
     is a wrapper around template::head::add_link.  
 
-    @param href      the href attribute of the link tag, eg. the target 
+    @param href      the href attribute of the link tag, e.g. the target 
                      stylesheet
     @param alternate sets the rel attribute of the link tag defining to 
                      'alternate stylesheet' if set, sets it to 'stylesheet' 
                      otherwise
     @param media     the media attribute of the link tag describing which 
                      display media this link is relevant to.  This may be a 
-                     comma separated list of values, eg. 'screen,print,braille'
+                     comma separated list of values, e.g. 'screen,print,braille'
     @param title     the title attribute of the link tag describing the target 
                      of this link 
     @param lang      the lang attribute of the link tag specifying the language 
@@ -287,12 +287,12 @@ ad_proc -public template::add_body_script {
     Add a script to the start of the body section of the document to be returned
     to the users client. You <strong>must</strong> supply either src or script.
 
-    @param type    the type attribute of the script tag, eg. 'text/javascript'
+    @param type    the type attribute of the script tag, e.g. 'text/javascript'
     @param defer   whether execution of the script should be deferred until after
                    the page has been loaded
-    @param src     the src attribute of the script tag, ie. the source url of the
+    @param src     the src attribute of the script tag, i.e. the source url of the
                    script
-    @param charset the charset attribute of the script tag, ie. the character 
+    @param charset the charset attribute of the script tag, i.e. the character 
                    set of the script if it differs from the main document
     @param script  the inline script for the body of the script tag.  This 
                    parameter will be ignored if a value has been supplied for

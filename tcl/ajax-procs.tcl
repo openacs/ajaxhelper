@@ -458,7 +458,7 @@ ad_proc -public ah::ajaxrequest {
     {-options ""}
 } {
     Returns javascript that calls the prototype javascript library's ajax request (Ajax.Request) object.
-    The Ajax.Request object will only perform an xmlhttp request to a url.
+    The Ajax.Request object will only perform an xmlhttp request to a URL.
     If you prefer to perform an xmlhttp request and then update the contents of a < div >, look at ah::ajaxupdate.
     Parameters and options are case sensitive, refer to scriptaculous documentation.
     http://wiki.script.aculo.us/scriptaculous/show/Ajax.Request

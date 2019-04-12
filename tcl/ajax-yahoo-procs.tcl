@@ -681,7 +681,7 @@ ad_proc -public ah::yui::autocomplete {
 
     @param varname The javascript variable to represent the autocomplete object.
     @param suggestlist A list or a list of lists with the values that will act as the datasource for the autocomplete object.
-    @param id The html id of that the autosuggest component will use to present suggestions. IMPORTANT : The html element with this id should already be in the adp page. e.g if id is oAutoContainer then your html document should already have "<div id='oAutoContainer'></div>" in it
+    @param id The html id of that the autosuggest component will use to present suggestions. IMPORTANT : The html element with this id should already be in the adp page. e.g. if id is oAutoContainer then your HTML document should already have "<div id='oAutoContainer'></div>" in it
     @param inputid The id of the input text box that the user will type in
     @param options Additional options that you want to pass to the javascript object constructor
 
