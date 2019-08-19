@@ -311,7 +311,8 @@ ad_proc -private ah::enclose_in_script {
 
     @param script string to enclose in javascript tags.
 } {
-    set tag "<script language=\"javascript\" type=\"text/javascript\"> \n"
+    set nonce [expr {[info exists ::__csp_nonce] ? "nonce=\"$::__csp_nonce\"": ""}]
+    set tag "<script $nonce type=\"text/javascript\">\n"
     append tag ${script}
     append tag "\n</script>"
     return $tag
