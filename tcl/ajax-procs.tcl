@@ -933,7 +933,7 @@ ad_proc -public ah::generate_autosuggest_array {
     @param array_list a list of lists which will be constructed
     as the javascript array. this takes priority
     over sql_query parameter.
-    @param sql_query  sql query to pass to db_list_of_lists to generate
+    @param sql_query  SQL query to pass to db_list_of_lists to generate
     the array
 } {
 

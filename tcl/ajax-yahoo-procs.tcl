@@ -80,7 +80,7 @@ ad_proc -private ah::yui::is_valid_source {
 ad_proc -private ah::yui::is_js_sources_loaded {
     -js_source
 } {
-    This proc will loop thru the global source_list
+    This proc will loop through the global source_list
     and check for the presence of the given js_source.
     If found, this proc will return 1
     If not found, this proc will return 0

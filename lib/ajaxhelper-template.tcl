@@ -1,4 +1,4 @@
-# HAM : lets check ajaxhelper globals ***********************
+# HAM : let's check ajaxhelper globals ***********************
 
 global ajax_helper_js_sources
 global ajax_helper_yui_js_sources
