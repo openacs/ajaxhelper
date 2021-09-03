@@ -1,5 +1,5 @@
 
-<property name="context">{/doc/ajaxhelper {Ajax Helper}} {Ajax Helper}</property>
+<property name="context">{/doc/ajaxhelper/ {Ajax Helper}} {Ajax Helper}</property>
 <property name="doc(title)">Ajax Helper</property>
 <master>
 <h1>Ajax Helper</h1>
@@ -86,7 +86,7 @@ that is best placed in an  event like "onClick".<br>
 &lt;a href="#" onClick="\@request;noquote\@"&gt;Send Request&lt;/a&gt;
 </code></pre>
 
-Consult the API-doc for more information about other parameters you
+Consult the api-doc for more information about other parameters you
 can pass on to the ah::ajaxrequest proc.<br>
 <br>
 
@@ -133,7 +133,7 @@ container&#39;s content has been updated.<br>
 <br>
 <span style="font-weight: bold;">Cinematic Effects :<br><br>
 </span>
-Use ah::effects to generate javascript that allows you
+ Use ah::effects to generate javascript that allows you
 to implement transitional and cinematic effects to html elements.
 You will need to consult the scriptaculous documentation <a href="http://madrobby.github.io/scriptaculous/core-effects/" target="_blank">http://madrobby.github.io/scriptaculous/core-effects/</a>
 
