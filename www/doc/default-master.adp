@@ -4,8 +4,8 @@
 <if @script:rowcount@ not nil><property name="&script">script</property></if>
 <if @doc@ defined><property name="&doc">doc</property></if>
 <if @body@ defined><property name="&body">body</property></if>
-<if @head@ not nil><property name="head">@head;noquote@</property></if>
-<if @focus@ not nil><property name="focus">@focus;noquote@</property></if>
+<if @head@ not nil><property name="head">@head;literal@</property></if>
+<if @focus@ not nil><property name="focus">@focus;literal@</property></if>
 <property name="skip_link">#content-wrapper</property>
 
 <div id="wrapper">
