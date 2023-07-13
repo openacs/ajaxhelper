@@ -133,7 +133,7 @@ container&#39;s content has been updated.<br>
 <br>
 <span style="font-weight: bold;">Cinematic Effects :<br><br>
 </span>
- Use ah::effects to generate javascript that allows you
+Use ah::effects to generate javascript that allows you
 to implement transitional and cinematic effects to html elements.
 You will need to consult the scriptaculous documentation <a href="http://madrobby.github.io/scriptaculous/core-effects/" target="_blank">http://madrobby.github.io/scriptaculous/core-effects/</a>
 
