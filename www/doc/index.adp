@@ -66,7 +66,7 @@ automatically using Lee Denison&#39;s template::head code.<br>
 <br>
 <span style="font-weight: bold;">Ajax Procedures :<br><br>
 Prototype</span>
- has a pair of javascript functions that alllow
+ has a pair of javascript functions that allow
 programmers to use XMLHTTP. The ajax.updater and ajax.request
 functions. See <a href="http://api.prototypejs.org/ajax/Ajax/Updater/">http://api.prototypejs.org/ajax/Ajax/Updater/</a>
 
