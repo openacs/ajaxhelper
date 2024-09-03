@@ -42,7 +42,7 @@ ad_proc -public ad_parse_template {
 
     @param params The parameters to pass to the template. Note that pass-by-reference params must be in the page namespace, they cannot be in a local procedure, or any other namespace.
 
-    @param template The template file name.
+    @param template The template filename.
 
     Example:
 
@@ -75,7 +75,7 @@ ad_proc -public ad_return_exception_template {
 
     @param status The HTTP status to return, by default HTTP 500 (Error)
     @param params The parameters to pass to the template.
-    @param template The template file name.
+    @param template The template filename.
 
     Example:
 

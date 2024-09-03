@@ -378,7 +378,7 @@ ad_proc ah::lb::prepare_template {
     }
 	template::list::get_reference -name $___list_name
 	foreach elm $list_properties(elements) {
-	    if {[lsearch {checkbox} $elm] < 0} {
+	    if {$elm ni {checkbox}} {
 		template::list::element::get_reference -list_name $___list_name -element_name $elm
 		set element_properties(hide_p) 0
 	    }

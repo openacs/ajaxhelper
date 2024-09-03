@@ -311,7 +311,8 @@ ad_proc -private ah::enclose_in_script {
 
     @param script string to enclose in javascript tags.
 } {
-    set tag "<script language=\"javascript\" type=\"text/javascript\"> \n"
+    set nonce [expr {[info exists ::__csp_nonce] ? "nonce=\"$::__csp_nonce\"": ""}]
+    set tag "<script $nonce type=\"text/javascript\">\n"
     append tag ${script}
     append tag "\n</script>"
     return $tag
@@ -458,7 +459,7 @@ ad_proc -public ah::ajaxrequest {
     {-options ""}
 } {
     Returns javascript that calls the prototype javascript library's ajax request (Ajax.Request) object.
-    The Ajax.Request object will only perform an xmlhttp request to a url.
+    The Ajax.Request object will only perform an xmlhttp request to a URL.
     If you prefer to perform an xmlhttp request and then update the contents of a < div >, look at ah::ajaxupdate.
     Parameters and options are case sensitive, refer to scriptaculous documentation.
     http://wiki.script.aculo.us/scriptaculous/show/Ajax.Request
@@ -932,7 +933,7 @@ ad_proc -public ah::generate_autosuggest_array {
     @param array_list a list of lists which will be constructed
     as the javascript array. this takes priority
     over sql_query parameter.
-    @param sql_query  sql query to pass to db_list_of_lists to generate
+    @param sql_query  SQL query to pass to db_list_of_lists to generate
     the array
 } {
 

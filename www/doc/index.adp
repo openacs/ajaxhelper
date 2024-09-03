@@ -1,7 +1,11 @@
 
-<property name="context">{/doc/ajaxhelper {Ajax Helper}} {Ajax Helper}</property>
+<property name="context">{/doc/ajaxhelper/ {Ajax Helper}} {Ajax Helper}</property>
 <property name="doc(title)">Ajax Helper</property>
 <master>
+<style>
+div.sect2 > div.itemizedlist > ul.itemizedlist > li.listitem {margin-top: 16px;}
+div.sect3 > div.itemizedlist > ul.itemizedlist > li.listitem {margin-top: 6px;}
+</style>              
 <h1>Ajax Helper</h1>
 <p>Hamilton G. Chua (ham\@solutiongrove.com)<br>
 September 2007<br>
@@ -66,7 +70,7 @@ automatically using Lee Denison&#39;s template::head code.<br>
 <br>
 <span style="font-weight: bold;">Ajax Procedures :<br><br>
 Prototype</span>
- has a pair of javascript functions that alllow
+ has a pair of javascript functions that allow
 programmers to use XMLHTTP. The ajax.updater and ajax.request
 functions. See <a href="http://api.prototypejs.org/ajax/Ajax/Updater/">http://api.prototypejs.org/ajax/Ajax/Updater/</a>
 
@@ -133,7 +137,7 @@ container&#39;s content has been updated.<br>
 <br>
 <span style="font-weight: bold;">Cinematic Effects :<br><br>
 </span>
-Use ah::effects to generate javascript that allows you
+ Use ah::effects to generate javascript that allows you
 to implement transitional and cinematic effects to html elements.
 You will need to consult the scriptaculous documentation <a href="http://madrobby.github.io/scriptaculous/core-effects/" target="_blank">http://madrobby.github.io/scriptaculous/core-effects/</a>
 

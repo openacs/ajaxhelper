@@ -93,7 +93,7 @@ ad_proc -private ah::dojo::requires {
 ad_proc -private ah::dojo::is_js_sources_loaded {
 	-js_source
 } {
-	This proc will loop thru source_list and check for the presence of js_source.
+	This proc will loop through source_list and check for the presence of js_source.
 	If found, this proc will return 1
 	If not found, this proc will return 0
 
