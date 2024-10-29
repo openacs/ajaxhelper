@@ -1,14 +1,14 @@
 ad_page_contract {
   This is the highest level site specific master template.
-  site-master adds site wide OpenACS functionality to every page.
+  site-master adds site-wide OpenACS functionality to every page.
 
   You should NOT need to modify this file unless you are adding functionality
-  for a site wide service.
+  for a site-wide service.
 
   If you want to customise the look and feel of your site you probably want to
   modify /www/default-master.
 
-  Note: currently site wide service content is hard coded in this file.  At 
+  Note: currently site-wide service content is hard coded in this file.  At 
   some point we will want to determine this content dynamically which will 
   change the content of this file significantly.
 
@@ -21,7 +21,7 @@ if {![info exists doc(title)] || $doc(title) eq ""} {
     set doc(title) [ad_conn instance_name]
 
     # There is no way to determine the language of instance_name so we guess
-    # that it is the same as the site wide locale setting - if not this must
+    # that it is the same as the site-wide locale setting - if not this must
     # be overridden
     set doc(title_lang) [lindex [split [lang::system::site_wide_locale] _] 0]
 }
